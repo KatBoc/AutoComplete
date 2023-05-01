@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a4c737-e1af-43a1-8309-a63f8cc92077" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/AutoComplete.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/DictionaryTree.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/Measurement.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/DictionaryTreeTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/AutoCompleteApp.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/TrieNode.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/TrieNode.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/WordDictionary.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/test.sc" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/AutoComplete.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/AutoComplete.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

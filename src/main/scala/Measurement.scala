@@ -36,8 +36,4 @@ object Measurement {
     println(s"Trie memory usage for autocomplete: $trieMemoryUsageForAutocomplete")
     println(s"Autocomplete execution time: $timeForAutocomplete ms")
   }
-
-  def main(args: Array[String]): Unit = {
-    measureTM()
-  }
 }
