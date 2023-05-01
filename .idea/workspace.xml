@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57a4c737-e1af-43a1-8309-a63f8cc92077" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/scala/AutoComplete.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/AutoComplete.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

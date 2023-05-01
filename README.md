@@ -55,6 +55,11 @@ Run tests by executing the following command:
 sbt test
 ```
 
+## TODO
+- [ ] functionality to add own path to words list in main
+- [ ] 'delete' function for deleting a tree from dictionary tree
+- [ ] short the tree by concatenating suffixes
+
 ## Inspirations
 - [Auto Complete Feature using Trie](https://www.geeksforgeeks.org/auto-complete-feature-using-trie/)
 - [Data structures for fast auto-complete](https://futurice.com/blog/data-structures-for-fast-autocomplete?fbclid=IwAR3faZklHNJ3NGLkzlNCvbwrOdh7d1M6rWgAuDFsNYdDF-bhlBv7NQ37uGI)
