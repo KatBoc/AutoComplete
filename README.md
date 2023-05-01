@@ -56,9 +56,11 @@ sbt test
 ```
 
 ## TODO
+- [ ] change default dictionary to loaded from file
 - [ ] functionality to add own path to words list in main
 - [ ] 'delete' function for deleting a tree from dictionary tree
 - [ ] short the tree by concatenating suffixes
+
 
 ## Inspirations
 - [Auto Complete Feature using Trie](https://www.geeksforgeeks.org/auto-complete-feature-using-trie/)
