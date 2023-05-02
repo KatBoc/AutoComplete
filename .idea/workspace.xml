@@ -76,7 +76,7 @@
     "settings.editor.selected.configurable": "project.propCompiler"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.AutoComplete">
+  <component name="RunManager" selected="ScalaTest.DictionaryTreeTest">
     <configuration name="AutoComplete" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="AutoComplete" />
       <module name="Autocompletion" />
@@ -119,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DictionaryTreeTest.A DictionaryTree should handle uppercase prefix" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+    <configuration name="DictionaryTreeTest.A DictionaryTree should handle bigger datasets" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="Autocompletion" />
       <option name="allowRunningInParallel" value="false" />
       <option name="projectPathOnTarget" />
@@ -128,18 +128,18 @@
       </option>
       <option name="testKind" value="Test name" />
       <option name="testClassPath" value="DictionaryTreeTest" />
-      <option name="testName" value="A DictionaryTree should handle uppercase prefix" />
+      <option name="testName" value="A DictionaryTree should handle bigger datasets" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.DictionaryTreeTest" />
+        <item itemvalue="ScalaTest.DictionaryTreeTest.A DictionaryTree should handle bigger datasets" />
         <item itemvalue="Application.AutoComplete" />
         <item itemvalue="Application.Measurement" />
-        <item itemvalue="ScalaTest.DictionaryTreeTest" />
         <item itemvalue="Scala REPL.Scala REPL" />
-        <item itemvalue="ScalaTest.DictionaryTreeTest.A DictionaryTree should handle uppercase prefix" />
       </list>
     </recent_temporary>
   </component>

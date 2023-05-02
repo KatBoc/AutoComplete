@@ -71,11 +71,10 @@ class DictionaryTreeTest extends AnyFlatSpec with Matchers {
 
   "A DictionaryTree" should "handle bigger datasets" in {
 
-    val englishWordsUrl = "https://www.mit.edu/~ecprice/wordlist.10000"
-    dictionaryTree.insertFromTxtURL(englishWordsUrl)
+    val filePath = "src/main/scala/wordlist_10000.txt"
+    dictionaryTree.insertFromTxtFile(filePath)
     val query = "jim"
     val suggestions = dictionaryTree.autocomplete(query)
     suggestions should contain theSameElementsAs List("jim", "jimmy")
   }
-
 }
