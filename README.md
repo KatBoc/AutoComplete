@@ -10,6 +10,12 @@ A Scala application that demonstrates the use of a Trie data structure to implem
 - Autocomplete functionality to search for words with a given prefix
 - Display the Trie structure for debugging purposes
 
+## Requirements
+
+- [Scala](https://www.scala-lang.org/download) 
+- [SBT](https://www.scala-sbt.org/download.html) (Scala Build Tool). .
+
+
 ## Usage
 
 You can import the code into your Scala project by including the DictionaryTree class and its associated TrieNode case class in your source code.
@@ -20,32 +26,63 @@ You can import the code into your Scala project by including the DictionaryTree 
 
 ## Compiling and Running the Program
 
-1. Make sure you have `sbt` (Scala Build Tool) installed on your system. If you don't have it, you can find the installation instructions [here](https://www.scala-sbt.org/download.html).
+1. Clone this repository.
 2. Open a terminal/command prompt and navigate to the project directory.
-3. Compile the program by running `sbt compile`.
-4. To run the `autocomplete` method, execute the following command:
+3. Compile the program by running 
+```bash
+sbt compile
+```
+
+### Run autocomplete with a single argument (prefix)
+
+To run the program with the test word list and search for words starting with the provided prefix, use the following command:
 
 ```bash
-sbt "run [query]"
+sbt "run [prefix]"
 ```
-Replace `[query]` with the prefix you want to search for. For example:
+Replace `[prefix]` with the prefix you want to search for. 
+
+For example:
 
 ```bash
 sbt "run car"
 ```
+By default, the tree will be build from list of words from "TestWords.txt": "bar", "car", "carpet", "java", "saver", "javascript", "internet". You can change the content of the file.
 
-This command will run the `main` method in the `AutoComplete` object, which in turn calls the `autocomplete` method with the provided prefix. The program will then display a list of words that start with the provided prefix.
-By default, the tree will be build from list of words: "bar", "car", "carpet", "java", "saver", "javascript", "internet".
-To insert the 10,000-word list and search for a prefix:
+### Run autocomplete with two arguments (file path and prefix)
+
+To run the program with a custom word list from a text file and search for words starting with the provided prefix, use the following command:
 
 ```bash
-sbt "run --insert10000 [your_prefix]"
+sbt "run [file_path] [prefix]"
 ```
+Replace [file_path] with the path to your text file and [prefix] with the prefix you want to search for. 
+
+For example:
+
+```bash
+sbt "run /path/to/your/wordlist.txt ji"
+```
+
+### Run autocomplete with the --insert10000 flag (insert 10,000 words and search for a prefix)
+
+To run the program with ready 10,000-word list and search for words starting with the provided prefix, use the following command:
+
+```bash
+sbt "run --insert10000 [prefix]"
+```
+
+Replace [prefix] with the prefix you want to search for.
 For example:
 
 ```bash
 sbt "run --insert10000 ji"
 ```
+
+### Notes
+
+The 10,000-word list is not saved to a database after being inserted, so when you run the program again with a different command, the 10,000-word list will not be in the Trie.
+
 
 ## Testing
 
@@ -56,9 +93,9 @@ sbt test
 ```
 
 ## TODO
-- [ ] change default dictionary to loaded from file
-- [ ] functionality to add own path to words list in main
-- [ ] 'delete' function for deleting a tree from dictionary tree
+- [x] change default dictionary to loaded from file
+- [x] functionality to add own path to words list in main
+- [ ] 'delete' function for deleting a word from the dictionary tree
 - [ ] short the tree by concatenating suffixes
 
 

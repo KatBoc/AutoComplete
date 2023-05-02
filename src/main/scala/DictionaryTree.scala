@@ -65,8 +65,8 @@ class DictionaryTree {
  * @param filePath the path to the text file to be read and inserted into the data structure
  */
   def insertFromTxtFile(filePath: String): Unit = {
-    val fileSource = Source.fromFile(filePath)
-    val words = fileSource.getLines.toList
+    val fileSource = Source.fromFile(filePath, "UTF-8")
+    val words = fileSource.mkString.split("\\W+").toList
     fileSource.close()
     words.foreach(insert)
   }

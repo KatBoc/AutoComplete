@@ -9,8 +9,17 @@ object AutoComplete {
    * Inserts a list of 10,000 English words into the dictionary tree.
    */
   def insert10000WordList(): Unit = {
-    val englishWordsUrl = "https://www.mit.edu/~ecprice/wordlist.10000"
-    dictionaryTree.insertFromTxtURL(englishWordsUrl)
+    val filePath = "src/main/scala/wordlist_10000.txt"
+    dictionaryTree.insertFromTxtFile(filePath)
+  }
+
+  /**
+   * Inserts a test list words into the dictionary tree from .txt.
+   *
+   */
+  def insertTestWordListFromTxt(): Unit = {
+    val filePath = "src/main/scala/TestWords.txt"
+    dictionaryTree.insertFromTxtFile(filePath)
   }
 
   /**
@@ -47,16 +56,19 @@ object AutoComplete {
   def main(args: Array[String]): Unit = {
     if (args.length == 1) {
       val query = args(0)
-      insertTestWordList()
+      insertTestWordListFromTxt()
       println(autocomplete(query).mkString(", "))
-    }
-
-    if (args.length > 1) {
-      if (args.contains("--insert10000")) {
-        insert10000WordList()
+    } else if (args.length == 2) {
+        if (args.contains("--insert10000")) {
+          insert10000WordList()
+        } else {
+          val fPath = args(0)
+          dictionaryTree.insertFromTxtFile(fPath)
+        }
         val query = args(1)
         println(autocomplete(query).mkString(", "))
-      }
+    } else {
+      println("Too many arguments")
     }
   }
 }
